@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - SchizoCare</title>
+    <!-- Link to Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Additional CSS for dark theme -->
+    <style>
+        /* Dark theme background */
+        body {
+            background-color: #111827;
+        }
+        /* Dark theme text color */
+        .text-dark {
+            color: #FFFFFF;
+        }
+    </style>
+    <!-- Additional CSS for animations -->
+    <style>
+        /* Custom animation class */
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="text-dark font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-semibold">SchizoCare</a>
+            <ul class="md:flex space-x-4 text-white">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#ceo-story" class="hover:underline">CEO's Story</a></li>
+                <li><a href="#cofounder" class="hover:underline">Cofounder</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="team" class="bg-gray-700 text-white py-12">
+        <div class="container mx-auto px-4 animate-fade-in">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="flex flex-col items-center">
+                    <img src="harshil.jpeg" alt="Team Member 1" class="w-32 h-32 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold">Harshil Jain</h3>
+                    <p class="text-gray-400">CEO</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="vedant.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mb-4">
+                    <h3 class="text-xl font-semibold">Vedant Pampattiwar</h3>
+                    <p class="text-gray-400">Chief Scientist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ceo-story" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 animate-fade-in">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">CEO's Story</h2>
+            <p class="text-lg leading-relaxed mb-6">
+                Harshil Jain our CEO, has a passion for utilizing AI in the field of mental health. His journey began with a vision to make a difference in the lives of individuals affected by schizophrenia. With dedication and expertise, he leads our team towards innovative solutions that offer hope and improved mental health outcomes.
+            </p>
+        
+        </div>
+    </section>
+
+    <section id="Cofounder" class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 animate-fade-in">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Meet Vedant Pampattiwar</h2>
+            <p class="text-lg leading-relaxed mb-6">
+                Vedant Pampattiwar, our Chief Scientist and co founder has a very deep passion of curing and helping people suffering with schizophrenia.
+                you can email him on ve1234@gmail.com
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 SchizoCare AI. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
